@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <% for(var i=0; i < htmlWebpackPlugin.files.css.length; i++) {%>
+    <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[i] %>">
+<% } %>
+</head>
+<body>
+    <div id="loader" class="loader">
+        <img src="images/logo.svg" alt="oyi logo" class="loader__image">
+        <p class="loader__text">Chargement ...</p>
+    </div>
+     <main id="oracle-card" class="app-template app-template app-template__card-decoration app-template__card-decoration--full">
+        <h1>OYI</h1>
+        <section class="oracle-card">
+            <img id="oracle-asana-image" src="#" alt="asana pose" class="oracle-card__main-asana" >
+            <h2 id="oracle-asana-title" class="oracle-card__title"></h2>
+            <div class="oracle-card__tips">
+                <p id="oracle-text">
+                </p>
+            </div>
+        </section>
+        <a class="app-template__button app-template__button--center" href="./card.html">Tirer une autre carte</a>
+     </main>
+    <% for(var i=0; i < htmlWebpackPlugin.files.js.length; i++) {%>
+        <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[i] %>"></script>
+    <% } %>
+</body>
+</html>

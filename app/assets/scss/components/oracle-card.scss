@@ -1,0 +1,27 @@
+.oracle-card {
+    min-height: 70%;
+    &__title {
+        text-align: center;
+        font-size: 2rem;
+    }
+    &__main-asana {
+        display: block;
+        margin: 0 auto;
+        height: 18rem;
+    }
+    &__tips {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin-right: 1rem;
+            object-fit: fill;
+            width: 3rem;
+        }
+        p {
+            flex: 1;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    }
+}

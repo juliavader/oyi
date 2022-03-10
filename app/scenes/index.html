@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <% for(var i=0; i < htmlWebpackPlugin.files.css.length; i++) {%>
+    <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[i] %>">
+<% } %>
+</head>
+<body>
+    <main class="app-template app-template__card-decoration app-template__card-decoration--full">
+        <h1 class="app-template__title">OYI</h1>
+        <p>Basé sur la Trimurti chaque asana est décrit en se basant sur le début, le maintien et la fin de votre question.
+        Voici comment lire l’oracle :</p>
+        <div class="oracle-card__tips">
+            <img src="images/lotus.svg" alt="lotus icon">
+            <p>Symbolise brahma et la création de l’univers.</p>
+        </div>
+        <div class="oracle-card__tips">
+            <img src="images/fossile.svg" alt="fossil icon">
+            <p>Symbolise brahma et la création de l’univers.</p>
+        </div>
+        <div class="oracle-card__tips">
+            <img src="images/lingam.svg" alt="lingam icon">
+            <p>Symbolise brahma et la création de l’univers.</p>
+        </div>
+        <a class="app-template__button app-template__button--center" href="./card.html">Tirer une carte</a>
+    </main>
+    <% for(var i=0; i < htmlWebpackPlugin.files.js.length; i++) {%>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[i] %>"></script>
+<% } %>
+</body>
+</html>

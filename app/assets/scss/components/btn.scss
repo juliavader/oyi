@@ -1,0 +1,17 @@
+.app-template{
+    &__button{
+        width: max-content;
+        background: #090A0B;
+        padding: 1rem;
+        text-decoration: none;
+        text-transform: none;
+        color: ivory;
+        font-family: 'bohemianSoul';
+        border-radius: 5px;
+
+        &--center {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
