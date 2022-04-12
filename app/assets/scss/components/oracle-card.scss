@@ -3,16 +3,18 @@
     &__title {
         text-align: center;
         font-size: 2rem;
+        margin-bottom: none;
     }
     &__main-asana {
         display: block;
         margin: 0 auto;
-        height: 18rem;
+        height: 16rem;
     }
     &__tips {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: none;
         img {
             margin-right: 1rem;
             object-fit: fill;

@@ -1,4 +1,4 @@
-const oracle = [
+const postures = [
     {
         "asana" : {
             "name": "Svastikasana",
@@ -50,16 +50,16 @@ const oracle = [
     },
 ];
 
-export function randomOracle() {
-   return oracle[Math.floor(Math.random()*oracle.length)];
+export function pickRandomPosture() {
+   return postures[Math.floor(Math.random()*postures.length)];
 }
 
-export function setOracle(oracle) {
+export function setOracle(posture) {
     const oracle_asana_title = document.getElementById("oracle-asana-title");
     const oracle_asana_image = document.getElementById("oracle-asana-image");
     const oracle_citation = document.getElementById("oracle-text");
 
-    oracle_asana_title.innerHTML = oracle.asana.name; 
-    oracle_asana_image.src = "images/" + oracle.asana.image;
-    oracle_citation.innerHTML = oracle.citation; 
+    oracle_asana_title.innerHTML = posture.asana.name; 
+    oracle_asana_image.src = "images/" + posture.asana.image;
+    oracle_citation.innerHTML = posture.citation; 
 }

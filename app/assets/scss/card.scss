@@ -1,6 +1,2 @@
-#oracle-card {
-    display: none;
-}
-
-@import './components/loader.scss';
+@forward "./components/animations/loader.scss";
 

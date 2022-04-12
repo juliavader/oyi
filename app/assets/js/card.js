@@ -1,8 +1,9 @@
-import '../scss/card.scss';
-import { randomOracle, setOracle } from "./oracle";
+// JS assets
+import "../scss/card.scss";
+import {pickRandomPosture , setOracle} from "./oracle";
 
 window.addEventListener('load', event => {""
-    const oracle = randomOracle();
+    const oracle = pickRandomPosture();
     setOracle(oracle);
     setTimeout(unsetLoader, 1000)
 })

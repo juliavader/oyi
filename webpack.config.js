@@ -5,7 +5,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: {
-        app: './app/assets/js/app.js',
         index: './app/assets/js/index.js',
         card: './app/assets/js/card.js'
     },
@@ -54,13 +53,13 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename:'index.html',
             template: 'app/scenes/index.html',
-            chunks: ['app','index'],
+            chunks: ['index'],
             inject: false, 
         }),
         new HtmlWebpackPlugin({
             filename:'card.html',
             template: 'app/scenes/card.html',
-            chunks: ['app','card'],
+            chunks: ['index','card'],
             inject: false, 
         }),
         new CopyPlugin({

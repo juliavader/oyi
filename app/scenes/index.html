@@ -10,8 +10,8 @@
 <% } %>
 </head>
 <body>
-    <main class="app-template app-template__card-decoration app-template__card-decoration--full">
-        <h1 class="app-template__title">OYI</h1>
+    <main class="oyi-app-template oyi-app-template__card-decoration oyi-app-template__card-decoration--full">
+        <h1 class="oyi-app-template__title">OYI</h1>
         <p>Basé sur la Trimurti chaque asana est décrit en se basant sur le début, le maintien et la fin de votre question.
         Voici comment lire l’oracle :</p>
         <div class="oracle-card__tips">
@@ -26,7 +26,7 @@
             <img src="images/lingam.svg" alt="lingam icon">
             <p>Symbolise brahma et la création de l’univers.</p>
         </div>
-        <a class="app-template__button app-template__button--center" href="./card.html">Tirer une carte</a>
+        <a class="oyi-app-template__button oyi-app-template__button--center" href="./card.html">Tirer une carte</a>
     </main>
     <% for(var i=0; i < htmlWebpackPlugin.files.js.length; i++) {%>
     <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[i] %>"></script>
